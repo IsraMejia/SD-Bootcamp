@@ -1,0 +1,19 @@
+
+
+a:hover{
+  background-color: rgb(125, 243, 178);
+}
+
+#Caracteristicas{
+  font-style: italic;
+  font-size: 13;
+  color: rgb(99, 72, 72);
+}
+
+#Descuento{
+  margin-left: 15px;
+  margin-right: 15;
+  border: 3px solid green;
+  padding: 5px,10,100,50; /*top right bottom left*/
+  
+}

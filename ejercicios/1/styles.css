@@ -1,0 +1,87 @@
+body{
+  font-size: 15px;
+  color: rgb(43, 59, 23);
+}
+
+main{
+  display: flex;
+}
+
+.col {
+  margin-left: 15px;
+  margin-right: 15;
+  border: 3px solid green;
+  padding: 5px,10,100,50; /*top right bottom left*/
+}
+
+h1{
+  font-size: 35px;
+  color:rgb(21, 21, 143);
+}
+
+a{
+  color: red;
+}
+
+a:visited{
+  color: midnightblue;
+}
+
+a:link{
+  border: 2px solid blue;
+}
+
+a:hover{
+  background-color: rgb(125, 243, 178);
+}
+
+a:active{
+  color:green;
+}
+
+a:visited{
+  color: gray;
+}
+
+.section-titles {
+  font-size: 30px;
+  color: rgba(99, 4, 4, 0.87);
+}
+
+#Ingredientes{
+  font-style: italic;
+  margin-bottom: 50px;
+}
+
+#Ingredientes li:first-child {
+  color: orange;
+  margin-right: 100px;
+}/*Pseudoclase*/
+
+#Utensilios::before{
+  display: block;
+  content : "";
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  margin-bottom: 50px;
+}
+
+#Utensilios:after{
+  display: block;
+  content : "";
+  width: 100px;
+  height: 100px;
+  background-color: chartreuse;
+  margin-bottom: 50px;
+}
+
+#Preparacion{
+  margin-bottom: 50px;
+}
+
+#details:open{
+  background-color: green;
+  color: darkblue;
+}
+

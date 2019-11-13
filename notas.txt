@@ -1,0 +1,68 @@
+-------------Notas Bootcamp SitDigital-----------------------------------------------
+  
+    9-Nov Se vera HTML CSS JS 
+                          
+                          HTML = contenido de la pagina
+Se recomienda usar etiquetas semanticas (que su nombre las describe) para poder leer 
+el codigo mas facil:
+footer, head, title, h1, section, label, form, body, section, label,img, aside, table, nav,
+link, main, article, header, address, button, etc.
+Otra ventaja de usar html semantico es que google puede reconocer/analizar mejor tu pagina para el 
+momento de hacer una busqueda (es mas probable que aparezcas).
+
+  <h1 class="principal">  Titulo principal /h1>
+            atributo      contenido visible
+
+<meta name= "viewport" contend = "width=device-width.initial-scale-1" 
+<¡-- te hace medio respensivo la pantalla-->
+<ul> //para listas con solo puntitos
+
+Los <br> no se recomienda usar mucho es mejor el uso de estilo u otra etiqueta 
+
+
+                        CSS = Estilos y Diseños
+selector{
+  font-size : 14 px;
+  /*Se declaran los estilos */
+}
+
+CSS es  una hoja de estilos en cascada, lo que significa que los cambios afectaran de arriba 
+abajo, similar a la herencia en POO
+En CSS existen:
+  -Elemnto
+  -Clase
+  -Id 
+-Pseudoselectores:
+  -PseudoElemento
+  -Pseudoclase
+
+Existen Atributos Globales y no globales:
+  -Globales: title, style, lang, id, draggable,class ...
+  -
+
+
+      <ol reversed start="20">
+      <!-- Hace la enumeracion iniciando en 20 y baja la enamuracion-->
+
+#Ingredientes{
+  font-style: italic;
+} /*Se hace una vez en el HTML buscando el ID de la etiqueta*/
+
+.section-titles {
+  font-size: 30px;
+  color: rgba(99, 4, 4, 0.87);
+}/*clase*/
+
+ID->Clase->Elemento //Jerarquia en CSS
+
+
+                                JS 
+Maneja el HTML y el CSS para que sea dinamica, dandole las capacidades de aplicacion
+
+{
+  var prueba1;
+  let prueba2;
+}
+
+console.log(prueba1, prueba2);
+//Solo tiene alcance fuera de los parentesis las variables tipo var, las let no.
