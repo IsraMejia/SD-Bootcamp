@@ -69,4 +69,8 @@ Maneja el HTML y el CSS para que sea dinamica, dandole las capacidades de aplica
 console.log(prueba1, prueba2);
 //Solo tiene alcance fuera de los parentesis las variables tipo var, las let no.
 
-Prubando Git pull
+Prubando Git pull 
+git clone www....
+git commit -a -m "Agregue el cambio en notas"
+git push -> mandar a github
+gi pull <- recibir de github
