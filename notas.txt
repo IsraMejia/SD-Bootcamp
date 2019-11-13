@@ -26,6 +26,8 @@ selector{
   /*Se declaran los estilos */
 }
 
+
+
 CSS es  una hoja de estilos en cascada, lo que significa que los cambios afectaran de arriba 
 abajo, similar a la herencia en POO
 En CSS existen:
@@ -66,3 +68,5 @@ Maneja el HTML y el CSS para que sea dinamica, dandole las capacidades de aplica
 
 console.log(prueba1, prueba2);
 //Solo tiene alcance fuera de los parentesis las variables tipo var, las let no.
+
+Prubando Git pull
