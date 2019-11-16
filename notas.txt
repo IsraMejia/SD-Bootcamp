@@ -21,6 +21,7 @@ Los <br> no se recomienda usar mucho es mejor el uso de estilo u otra etiqueta
 
 
                         CSS = Estilos y Diseños
+
 selector{
   font-size : 14 px;
   /*Se declaran los estilos */
@@ -57,6 +58,8 @@ Existen Atributos Globales y no globales:
 
 ID->Clase->Elemento //Jerarquia en CSS
 
+padding = relleno //un margen inverso, verde "margen de contenedor" 
+
 
                                 JS 
 Maneja el HTML y el CSS para que sea dinamica, dandole las capacidades de aplicacion
@@ -69,8 +72,16 @@ Maneja el HTML y el CSS para que sea dinamica, dandole las capacidades de aplica
 console.log(prueba1, prueba2);
 //Solo tiene alcance fuera de los parentesis las variables tipo var, las let no.
 
+
+
+
+		Git- Github
 Prubando Git pull 
 git clone www....
 git commit -a -m "Agregue el cambio en notas"
 git push -> mandar a github
 gi pull <- recibir de github
+
+
+		Herramientas de desarrollador
+Command+Shift+c // Te deja inspeccionar elemento a electo de manera detallada :D
