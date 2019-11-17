@@ -49,22 +49,24 @@ body{
     text-decoration: none;
     padding: 10px 15px;
     display: block;
-    
-}/*todas las anclas E [li]*/
+    list-style-type: none;
+}/*todas las anclas "a" E [li]*/
 
 .bar-navigetion li a:hover {
-    background-color: cornflowerblue;
+    background-color: cornflowerblue; 
+    /*color de submenu*/
 }
 
 .bar-navigetion li ul{
     display: none; /*esconde los submenus*/
     position: absolute;
-    min-width: 140px;
+    min-width: 140px; 
     padding: 0;
 }
 
 .bar-navigetion li:hover > ul {
-    display: block;   
+    display: block;  /*Muestra los submenus*/
+    list-style-type: none;
 }
 
 .promos-list-title{
