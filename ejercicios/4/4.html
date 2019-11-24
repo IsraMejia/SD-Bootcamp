@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>1erTemplate</title>
+</head>
+<body>
+
+  <template id = "tpl-prueba"> 
+    <div class="articulo">
+      <h1  > Ipad de 9.7</h1>
+
+      <figure  >
+          <!--Contenedor "padre de la imagen"-->
+          <img src="ipad6.jpg" width="300" alt="no puedo cargar la imagen :c">
+      </figure>
+
+      <p >
+          Marca: APPLE <br>
+          Bluetooth: Versión 4.2<br>          
+          Dimensiones: Alto 24 cm x Ancho 16.9 cm x Profundo 0.75 cm aproximado<br>          
+          Pantalla Touch: Sí<br>          
+          Peso: 469 g <br>          
+          Procesador: Coprocesador M10 integrado
+      </p>
+    </div>
+  </template>
+
+  <div id="huesped">
+    <script>
+      const host = document.querySelector("#huesped");
+      const tpl = document.querySelector("#tpl-prueba");
+
+      const tplInst = tpl.content.cloneNode(true);
+
+      host.appendChild(tplInst);
+
+    </script>
+
+    <h2>Ejercicioo</h2>
+
+    <p>Crear el template</p>
+
+  </div>
+  
+</body>
+</html>
