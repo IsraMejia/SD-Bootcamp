@@ -22,5 +22,5 @@ const rex= {
 
 };
 
-document.body.querySelector('#resultado').append(JSON.stringify(rex));
+document.body.querySelector('#resultado').append(JSON.parse(stringify(rex)));
 
