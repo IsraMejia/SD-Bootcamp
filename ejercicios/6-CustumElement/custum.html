@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CustumElements</title>
+
+  <style>
+  mi-boton{
+    background-color: silver;
+    color: rgb(7, 131, 33);
+    border: 1px solid ;
+    border-radius: 18px;
+    padding: 4px;
+  }
+  </style>
+
+
+</head>
+
+<body>
+
+  <mi-boton>hackiar xd</mi-boton>
+
+  <script> 
+  class MiBoton extends HTMLElement{
+    constructor(){
+      super();
+      this.escucharEventos();
+    }//constructor
+
+    escucharEventos(){
+      this.addEventListener('click', this.dispararMiEvento);
+    }//escucharEventos
+
+    dispararMiEvento(){
+      const miEvento = new CustomEvent('mi-evento', {
+        bubbles: true, //recorre el arbol del HTML DOM
+        detail: {
+          nombre: 'Isra',
+          edad : 22
+        }
+      });
+
+      this.dispatchEvent(miEvento);
+    }//dispararMiEvento
+  }//Class MiBoton
+
+  customElements.define('mi-boton',MiBoton);
+
+  /*Para mandar a llamar en la terminal 
+  document.addEventListener('mi-evento',console.log);
+  */
+  </script>
+  <!--Aqui se usa vanilla js-->
+</body>
+
+
+</html>

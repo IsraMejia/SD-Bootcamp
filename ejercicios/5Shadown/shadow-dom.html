@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>1erShadown</title>
+
+  <style>
+    #host h1{
+      color: blue;
+    }
+  </style>
+
+</head>
+<body>
+
+  <template id = "tpl"> 
+    <style>
+      h1{
+      color:red ;
+      }
+    </style>
+    <div>
+      <h1  > Ipad de 9.7</h1>
+
+      <figure  >
+          <!--Contenedor "padre de la imagen"-->
+          <img src="ipad6.jpg" width="300" alt="no puedo cargar la imagen :c">
+      </figure>
+
+      <p >
+          Marca: APPLE <br>
+          Bluetooth: Versión 4.2<br>          
+          Dimensiones: Alto 24 cm x Ancho 16.9 cm x Profundo 0.75 cm aproximado<br>          
+          Pantalla Touch: Sí<br>          
+          Peso: 469 g <br>          
+          Procesador: Coprocesador M10 integrado
+      </p>
+    </div>
+  </template>
+
+    <div id="host">
+      <div slot="primero">
+        <h1>
+          Hola en el slot [name = "primero"]
+        </h1>
+      </div>
+      <div slot="ultimo">
+        <h2>Adios en el slot[name = "ultimo"] </h2>
+      </div>
+
+    </div>
+
+
+
+  <div id="huesped">
+    <script>
+      const host = document.querySelector("#host");
+      const tpl = document.querySelector("#tpl");
+      const shadownRoot = host.attachShadow( {mode : 'open'});
+      const content = tpl.content.cloneNode(true);
+
+      shadownRoot.appendChild(content);
+
+    </script>
+
+  </div>
+  
+</body>
+</html>
